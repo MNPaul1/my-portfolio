@@ -1,0 +1,12 @@
+.Navbar{
+    position:absolute;
+    top: -10%;
+    width: 100%;
+    text-align: center;
+}
+.Navbar>*{
+    color: #d1d1d1;
+    margin-right: 2%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
