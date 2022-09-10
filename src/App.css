@@ -18,7 +18,19 @@
     z-index: 0;
     border-radius: 5px 80px 0 80px;
     background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
+    animation: bg-color 10s ease-in 10s infinite;
 }
+@keyframes bg-color {
+    0% {
+        background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
+    }
+    50%{
+        background: linear-gradient(rgb(87,79,163),rgb(55,151,71),rgb(169,121,84));
+    }
+    100% {
+        background: linear-gradient(rgb(87,79,163),rgb(55,151,71));
+    }
+} 
 .main-container{
     width: 65%;
     height: 78%;

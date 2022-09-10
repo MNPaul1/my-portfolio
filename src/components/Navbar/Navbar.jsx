@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className='Navbar'>
     {items.map((item,index) =>(
-      <Link to="/" key={index} className={item}>{item}</Link>
+      <Link to={`/${item==="Home"?"":item.toLowerCase()}`} key={index} className={item}>{item}</Link>
     ))}
     </div>
   )

@@ -1,0 +1,53 @@
+.projects{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.project-display{
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 5px 7px 5px rgb(19, 18, 18);
+}
+.project-title{
+    position: absolute;
+    top: -8.5%;
+    left: 2%;
+    z-index: 1;
+}
+.description-container{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: none;
+    border-radius: inherit;
+}
+.project-description{
+    width: 80%;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    /* background-size: contain; */
+}
+ul{
+    font-size: medium;
+    font-weight: 600;
+    line-height: 2.6;
+}
+li{
+    list-style-type: none;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rebeccapurple;
+    text-decoration-thickness: 2px;
+}
+li:hover{
+    cursor: pointer;
+}

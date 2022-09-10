@@ -1,34 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .home{
     position:absolute;
     height: 100%;
     width: 100%;
     overflow: hidden;
     display: flex;
-    color: #d1d1d1;
-    font-family: 'Montserrat', sans-serif;
 
 }
 
-.home>*:nth-child(1){
-    flex: 1 1 60%;
-}
-.home>*:nth-child(2){
-    flex: 1 1 40%;
-    position: relative;
-}
-.logo{
-    height: 17%;
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .intro {
     box-sizing: border-box;
     padding: 0% 2% 0 10%;
     height: 50%;
-    width: 60%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 0%;
@@ -50,6 +33,7 @@
     margin-right: 3%;
     border-radius: 10%;
     background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
+    animation: bg-color 10s ease-in 10s infinite;
     display: inline-block;
 }
 p{
@@ -57,40 +41,5 @@ p{
     width: 95%;
     font-weight: 600;
     line-height: 1.6;
-    /* font-size: medium; */
-}
-.media{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 13%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    column-gap: 7%;
-}
-.media>*{
-    text-decoration: none;
-    color: #d1d1d1;
-}
-.education{
-    height: 40%;
-    width: 80%;
-}
-.corner{
-    position:absolute;
-    background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
-    height: 40%;
-    width: 30%;
-    border-radius: 2% 5% 0 5%;
-}
-.education-container{
-    position: absolute;
-    top: 29%;
-    left: 1%;
-    height: 98%;
-    width: 98%;
-    background-color: #1d1d20;
-    padding: 2% 0 0 5%;
-    /* background-color: ; */
+    font-size: medium;
 }
