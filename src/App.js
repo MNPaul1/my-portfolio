@@ -3,6 +3,7 @@ import Home from './components/home/Home';
 import Projects from './components/Project/Projects';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Skills from './components/Skiils/Skills';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/skills' element={<Skills />} />
           </Routes>
         </Router>
         </div>
