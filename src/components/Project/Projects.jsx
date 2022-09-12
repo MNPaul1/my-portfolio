@@ -37,7 +37,7 @@ export default function Projects() {
       <RightLayout heading={"Projects"} content={
         <ul>
           {projects.map((project, index) => (
-            <li onClick={handleClick} key={index} id={index} className={project.name}>{project.name}</li>
+            <li onClick={handleClick} key={index} id={index} className={`underline`}>{project.name}</li>
           ))}
         </ul>
       } />

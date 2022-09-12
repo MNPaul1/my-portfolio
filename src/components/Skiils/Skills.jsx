@@ -40,7 +40,7 @@ export default function Skills() {
                 <div className='skills-items'>
                     <ul className='skills-ul'>
                         {Skills.map((skill, index) => (
-                            <li onClick={handleClick} key={index} id={index}>{skill.name}</li>
+                            <li onClick={handleClick} className='underline' key={index} id={index}>{skill.name}</li>
                         ))}
                     </ul>
                 </div>
