@@ -18,6 +18,7 @@
     top: 30px;
     height:100px;
     width: 100px;
+    background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
     animation: bg-color 10s ease-in 10s infinite;
     border-top-left-radius:5px;
     line-height: 1.6;

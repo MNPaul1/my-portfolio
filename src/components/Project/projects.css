@@ -60,6 +60,9 @@ li:hover{
         top: 100px;
         font-size: small;
     }
+    img{
+        width: auto;
+    }
 }
 @media screen and (max-width:1000px) and (min-width: 500px){
     .project-display{

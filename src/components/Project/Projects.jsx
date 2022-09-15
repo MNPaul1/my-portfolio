@@ -6,16 +6,13 @@ import "../components.css"
 import data from "../data.json"
 
 export default function Projects() {
-  console.log(data)
   const {projects} = data
-  console.log(projects)
 
 
   const [currentProject, setProject] = useState(projects[0]);
   function handleClick(e) {
     const curProject = e.target.id
     setProject(projects[curProject])
-    // const {name, imgLink, description} = projects[currentProject]
   }
   function handleMouseEnter() {
     const desContainer = document.getElementsByClassName("description-container")[0]
