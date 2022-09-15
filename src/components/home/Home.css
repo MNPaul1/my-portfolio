@@ -1,11 +1,4 @@
-.home{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
 
-}
 
 .intro {
     box-sizing: border-box;
@@ -21,25 +14,53 @@
 
 .welcome-heading{
     width: 100%;
-    font-size:100px;
+    font-size:6em;
     font-weight: 100;
     margin: 0;
     padding: 0;
 }
 
 .line{
-    height: 44%;
-    width: 4px;
-    margin-right: 3%;
-    border-radius: 10%;
-    background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
+    width: 97%;
+    height: fit-content;
+    padding-left: 1%;
+    box-sizing: border-box;
     animation: bg-color 10s ease-in 10s infinite;
-    display: inline-block;
 }
-p{
-    display: inline-block;
-    width: 95%;
-    font-weight: 600;
+.intro-des{
+    height: 100%;
+    width: 100%;
+    padding-left: 5.8%;
+    box-sizing: border-box;
+    background-color: #1d1d20;
     line-height: 1.6;
     font-size: medium;
+}
+@media screen and (max-width: 480px){
+    .intro{
+        padding-left: 3%;
+        height: 10%;
+        top: 25%;
+
+    }
+    .home>*{
+        width: 100%;
+    }
+    .welcome-heading{
+        font-size:3.5em;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        font-weight: 100;
+    }
+    .intro-des{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 500px){
+    .intro{
+        padding-left: 8%;
+        height: 10%;
+        top: 20%;
+
+    }
 }

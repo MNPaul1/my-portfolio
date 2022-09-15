@@ -1,9 +1,3 @@
-.skills{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
 .skills-ul{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -14,27 +8,33 @@
 }
 
 .skills-left{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    column-gap: 3%;
-    row-gap: 25%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 }
+.skills-left>*{
+    flex: 1 1 47.5%;
+}
+.skills-left>*:nth-child(3){
+    margin: 8%;
 
+}
 .circular-bar{
     width: fit-content;
     position: relative;
 }
 .line-bar{
-    width: 70%;
-    padding-left: 15%;
-    grid-column: span 2;
+    width: 50%;
+    text-align: center;
 }
 
 .caption{
     position:absolute;
     top: 40%;
-    left: 50%;
+    left: 35%;
 }
 
 .circularpro{
@@ -61,5 +61,30 @@
     }
     to {
         width: 100%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .skills-left{
+        top: 300px;
+        width: 100%;
+    }
+    .circular-bar{
+        margin-top: 6%;
+        text-align: center;
+    }
+    .caption{
+        left: 50%;
+    }
+    .line-bar{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) and (min-width: 500px){
+    .skills-left{
+        top: 300px;
+        width: 100%;
+    }
+    .line-bar{
+        display: block;
     }
 }

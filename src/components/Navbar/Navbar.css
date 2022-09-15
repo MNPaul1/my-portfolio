@@ -1,13 +1,17 @@
 .Navbar{
     position:absolute;
+    overflow: hidden;
+    height: fit-content;
     top: -10%;
     width: 100%;
     text-align: center;
+
 }
 .Navbar>*{
     color: #d1d1d1;
     font-weight: 500;
     font-size: medium;
+
     margin-right: 2%;
     text-transform: uppercase;
     text-decoration-color: #707070;
@@ -17,4 +21,19 @@
     text-decoration-color: rebeccapurple;
     font-size: large;
     font-weight: 600;
+}
+.items:hover{
+    font-weight: 600;
+}
+
+@media screen and (max-width:1000px) {
+    .Navbar{
+        top: 3%;
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        
+    }
 }

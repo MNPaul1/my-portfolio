@@ -4,6 +4,30 @@
     width: 100vw;
     box-sizing: border-box;
 }
+.popup{
+    height: 30%;
+    display: none;
+    width: 25%;
+    z-index: 3;
+    background: #1d1d20d8;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+.close-btn{
+    position: inherit;
+    right: 0;
+    background-color: inherit;
+    border: 0;
+}
+.close-btn:hover{
+    cursor: pointer;
+}
+.mail{
+    color: #d1d1d1;
+    font-size: medium;
+    font-weight: 600;
+}
+
 .center{
     position:absolute;
     top: 50%;
@@ -13,10 +37,9 @@
 .container{
     width: 23%;
     height: 40%;
-    background-color: red;
     position:fixed;
     z-index: 0;
-    border-radius: 5px 80px 0 80px;
+    border-radius: 5px 80px 5px 80px;
     background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
     animation: bg-color 10s ease-in 10s infinite;
 }
@@ -24,8 +47,14 @@
     0% {
         background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
     }
-    50%{
+    25%{
         background: linear-gradient(rgb(87,79,163),rgb(55,151,71),rgb(169,121,84));
+    }
+    50%{
+        background: linear-gradient(rgb(55,151,71),rgb(169,121,84));
+    }
+    75%{
+        background: linear-gradient(rgb(87,79,163),rgb(55,151,71));
     }
     100% {
         background: linear-gradient(rgb(87,79,163),rgb(55,151,71));
@@ -49,4 +78,44 @@
     height: 100%;
     width: 100%;
     background-color: #1d1d20;   
+}
+@media screen and (max-width: 480px) {
+    .popup{
+        width: 95%;
+    }
+    .main-container{
+        width: 98%;
+        height: 99%;
+    }
+    .container_1{
+        border-radius: 5px 5px 0 5px;
+        height: 18%;
+        width: 33%;
+        top: -1%;
+        left: -2%;
+    }
+    .container_2{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 500px){
+    .popup{
+        width: 88%;
+    }
+    .main-container{
+        width: 90%;
+    }
+    .container{
+        width: 40%;
+    }
+    .inner-container{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 1300px) and (min-width: 1000px){
+
+    .main-container{
+        width: 90%;
+    }
+
 }

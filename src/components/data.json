@@ -1,0 +1,16 @@
+  {"projects": [
+    { "name": "Hostal Management System", "imgLink": "https://static.vecteezy.com/system/resources/previews/004/141/292/original/person-home-flat-cartoon-style-logo-concept-human-icon-in-house-man-silhouette-in-building-isolated-icon-on-black-background-vector.jpg", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci doloremque impedit dicta harum laborum eveniet animi aut quas rem!" },
+    { "name": "One Click Share", "imgLink": "https://www.logolynx.com/images/logolynx/54/54559077102b820e651b6d180a80f95b.jpeg", "description": "" },
+    { "name": "Password Manager", "imgLink": "", "description": "" },
+    { "name": "Currency Rate Converter", "imgLink": "", "description": "" }
+  ],
+  "Skills" : [{ "name": "Python", "value": 90, "buffer": 5 },
+    { "name": "C++", "value": 78, "buffer": 2 },
+    { "name": "JavaScript", "value": 84, "buffer": 7 },
+    { "name": "NodeJS", "value": 75, "buffer": 5 },
+    { "name": "ReactJS", "value": 78, "buffer": 8 },
+    { "name": "ExpressJS", "value": 76, "buffer": 5 },
+    { "name": "EJS", "value": 80, "buffer": 3 },
+    { "name": "HTML", "value": 95, "buffer": 2 },
+    { "name": "CSS", "value": 90, "buffer": 5 }]
+  }

@@ -4,7 +4,7 @@ import Projects from './components/Project/Projects';
 import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Skills from './components/Skiils/Skills';
-
+import { Close} from '@mui/icons-material';
 
 function App() {
   function Corner(props) {
@@ -13,6 +13,15 @@ function App() {
 
   return (
     <div className="App">
+
+    <div className="popup center">
+      <nav className='mail center'>Email - mnpaul426@gmail.com</nav>
+    <button className='close-btn' onClick={() =>(
+      document.getElementsByClassName("popup")[0].style.display = "none"
+    )}>
+      <Close />
+    </button>
+    </div>
       <div className="main-container center">
         <Corner name="container_1" />
         <Corner name="container_2" />

@@ -1,0 +1,15 @@
+.component{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-weight: 600;
+
+}
+@media screen and (max-width: 1000px){
+    .component{
+        overflow: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+}

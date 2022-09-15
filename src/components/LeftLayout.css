@@ -1,15 +1,11 @@
-.logo{
-    height: 17%;
-    width: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background-image: url("https://preview.redd.it/7et7kdy2mdl41.jpg?auto=webp&s=be6b05afcecb446f2c74b0ba31e06a304086bfcf"); */
-    /* background-color: black; */
-}
 .left{
-    flex:1 1 60%;
+    flex:60%;
     height: 100%;
     position: relative;
-
+}
+@media screen and (max-width: 1000%) {
+    .left{
+        flex: 100%;
+        height: fit-content;
+    }
 }
