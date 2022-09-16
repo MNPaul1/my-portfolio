@@ -3,6 +3,16 @@
     height: 100%;
     position: relative;
 }
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo-img{
+    height: 90px;
+    width: 90px;
+    filter: drop-shadow(0.5px 0.5px 2px rgb(106, 65, 147)) invert(70%);
+}
 @media screen and (max-width: 1000%) {
     .left{
         flex: 100%;

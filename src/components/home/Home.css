@@ -15,7 +15,7 @@
 .welcome-heading{
     width: 100%;
     font-size:6em;
-    font-weight: 100;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
@@ -25,6 +25,8 @@
     height: fit-content;
     padding-left: 1%;
     box-sizing: border-box;
+    background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
+    border-radius: 5px;
     animation: bg-color 10s ease-in 10s infinite;
 }
 .intro-des{

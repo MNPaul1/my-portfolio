@@ -9,8 +9,8 @@
     display: none;
     width: 25%;
     z-index: 3;
-    background: #1d1d20d8;
-    border: 1px solid black;
+    background: #161618d8;
+    border: 1px solid #1c0d26;
     border-radius: 23px;
 }
 .close-btn{
@@ -18,14 +18,18 @@
     right: 0;
     background-color: inherit;
     border: 0;
+    color: #d1d1d1;
 }
 .close-btn:hover{
     cursor: pointer;
 }
 .mail{
     color: #d1d1d1;
-    font-size: medium;
-    font-weight: 600;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .center{

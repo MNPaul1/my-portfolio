@@ -1,17 +1,17 @@
 .Navbar{
     position:absolute;
     overflow: hidden;
-    height: fit-content;
+    height: 30px;
     top: -10%;
     width: 100%;
     text-align: center;
 
 }
-.Navbar>*{
+.Navbar>*, .mini-navbar>*{
     color: #d1d1d1;
     font-weight: 500;
     font-size: medium;
-
+    
     margin-right: 2%;
     text-transform: uppercase;
     text-decoration-color: #707070;
@@ -22,18 +22,46 @@
     font-size: large;
     font-weight: 600;
 }
-.items:hover{
+.hamburger{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    display: none;
+    z-index: 1;
+}
+.mobile-nav{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    background-color: #1d1d20;
+    height: 100%;
+    display: none;
+    width: 50%;
+    overflow: hidden;
+}
+.mini-navbar{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    position:absolute;
+    height: 200px;
+    top: 70px;
+    left: 35px;
+}
+.close-btn{
+    position:absolute;
+    right: 15px;
+    top: 30px;
+}
+.underline:hover{
     font-weight: 600;
 }
-
 @media screen and (max-width:1000px) {
     .Navbar{
-        top: 3%;
-        width: 100%;
-        padding: 0 5%;
+        display: none;
+    }
+    .hamburger{
         display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
-        
     }
 }

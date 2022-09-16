@@ -17,14 +17,15 @@
 }
 .skills-left>*{
     flex: 1 1 47.5%;
+    text-align: center;
 }
 .skills-left>*:nth-child(3){
     margin: 8%;
 
 }
 .circular-bar{
-    width: fit-content;
     position: relative;
+    
 }
 .line-bar{
     width: 50%;
@@ -33,11 +34,11 @@
 
 .caption{
     position:absolute;
-    top: 40%;
-    left: 35%;
+    margin: 0;
+    width: 100%;
 }
 
-.circularpro{
+.circular-progress{
     animation: circular-rotate 1s linear;
 }
   
@@ -50,7 +51,7 @@
     }
   }
 
-.linearpro{
+.linear-progress{
     animation: run 1.5s linear;
     box-shadow: 5px 5px 6px black;
 
@@ -68,13 +69,7 @@
         top: 300px;
         width: 100%;
     }
-    .circular-bar{
-        margin-top: 6%;
-        text-align: center;
-    }
-    .caption{
-        left: 50%;
-    }
+
     .line-bar{
         display: none;
     }

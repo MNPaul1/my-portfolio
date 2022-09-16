@@ -19,11 +19,11 @@ export default function Skills() {
                 <div className='skills-left center'>
                     <h1 className='skills-heading'>{name}</h1>
                     <div className="circular-bar">
-                        <CircularProgress size={200} className='circularpro' color='secondary' thickness={1} variant='determinate' value={value} />
+                        <CircularProgress size={200} className='circular-progress' color='secondary' thickness={1} variant='determinate' value={value} />
                         <h2 className='caption center'>{value}%</h2>
                     </div>
                     <div className="line-bar">
-                        <LinearProgress className='linearpro' color='secondary' variant="buffer" value={value} valueBuffer={value + buffer} />
+                        <LinearProgress className='linear-progress' color='secondary' variant="buffer" value={value} valueBuffer={value + buffer} />
                         <h3>{value} - {value+buffer}%</h3>
                     </div>
                 </div>
