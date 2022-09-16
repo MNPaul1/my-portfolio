@@ -22,8 +22,8 @@
 
 .line{
     width: 97%;
-    height: fit-content;
     padding-left: 1%;
+    
     box-sizing: border-box;
     background: linear-gradient(rgb(120,62,169),rgb(169,121,84));
     border-radius: 5px;
